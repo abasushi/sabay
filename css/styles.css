@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+section {
+    position: relative;
+}
+
+body {
+    background-color: #FFFFFE;
+    font-family: 'Spline Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heroSection {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.heading h1 {
+    font-family: 'Spline Sans Mono', sans-serif;
+    color: #5a82f1;
+    font-weight: 700;
+    font-size: 8rem;
+    letter-spacing: -8px;
+    text-align: center;
+    user-select: none;
+}
+
+.subheading {
+    margin: 2rem 0;
+}
+
+.subheading h2 {
+    font-family: 'Spline Sans Mono', sans-serif;
+    color: #5a82f1;
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.marquee {
+    background-color: #5a82f1;
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.4rem;
+}
+
+.marquee-text {
+    color: #FFFFFE;
+    white-space: nowrap;
+    font-size: 2.5rem;
+    font-family: 'Spline Sans Mono', sans-serif;
+    letter-spacing: -2px;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    animation: crawl 35s linear infinite;
+    /* animation-delay: 10s; */
+}
+
+@keyframes crawl {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.stationsSection {
+    /* background-color: #0E0E0E; */
+    padding: 5rem 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    place-items: center;
+    width: 100%;
+}
+
+.stationCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    border-radius: 0.7rem;
+    /* border: #5a82f1 solid 0.2rem; */
+    background-color: #5a82f1;
+}
+
+.cardTitle h3 {
+    font-family: 'Spline Sans Mono', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    /* text-transform: uppercase; */
+    color: #FFFFFE;
+    letter-spacing: -1px;
+}
+
+.cardButton a {
+    font-family: 'Spline Sans Mono', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: #FFFFFE;
+    color: #5a82f1;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+}
+
+.cardButton a:hover {
+    color: #0E0E0E;
+}
+
+@media screen and (max-width: 1024px) {
+    .heroSection{
+        padding: 10rem;
+    }
+
+    .heading h1{
+        font-size: 6rem;
+        letter-spacing: -6px;
+    }
+
+    .subheading h2{
+        font-size: 1rem;
+    }
+
+    .stationsSection{
+        padding: 0 2rem;
+    }
+
+    .cardTitle h3{
+        font-size: 1.5rem;
+    }
+}

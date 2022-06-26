@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+section {
+    position: relative;
+}
+
+body {
+    background-color: #FFFFFE;
+    font-family: 'Spline Sans Mono', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.pageTransition {
+    position: absolute;
+    top: 0;
+    background-color: #5a82f1;
+    width: 100%;
+    height: 0%;
+}
+
+.stationSection{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.bound{
+    margin: 0 5rem;
+}
+
+.bound h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.clock{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* width: 100%; */
+    background-color: #5a82f1;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.time{
+    font-family: 'Spline Sans Mono', sans-serif;
+    margin: 0 1rem;
+    background-color: #FFFFFE;
+    color: #5a82f1;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 6rem;
+    padding: 1rem;
+}
+
+.label{
+    text-align: center;
+    font-family: 'Spline Sans', sans-serif;
+    color: #FFFFFE;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
