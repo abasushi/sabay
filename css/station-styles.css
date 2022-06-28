@@ -45,17 +45,18 @@ a {
     font-family: 'Spline Sans Mono', sans-serif;
     font-size: 1rem;
     font-weight: 500;
-    background-color: #5a82f1;
-    color: #FFFFFE;
+    border: 2px solid #EE4D66;
+    color: #EE4D66;
     padding: 0.5rem 1rem;
     border-radius: 0.4rem;
-    transition: 0.2s;
+    transition: 0.4s;
     text-align: center;
     text-transform: uppercase;
 }
 
 .backButton a:hover{
-    color: #0E0E0E;
+    background-color: #EE4D66;
+    color: #FFFFFE;
 }
 
 .stationName h1 {
