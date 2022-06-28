@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabay</title>
+    <title>(Sabay) | Baclaran Station</title>
 
     <!--=== FAVICON ===-->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -49,6 +49,10 @@
                 <h1>Baclaran</h1>
                 <h2>Station</h2>
             </div>
+        </div>
+
+        <div class="scrollButton">
+            <div class="scroll-down"></div>
         </div>
     </section>
 
@@ -300,19 +304,37 @@
     <script>
         ScrollReveal({
             reset: true,
-            distance: '70px'
         });
 
-        ScrollReveal().reveal('.heading, .timer', {
+        ScrollReveal().reveal('.heading h1', {
             delay: 100,
             interval: 100,
             duration: 500,
+            distance: '20px',
+            origin: 'top'
+        });
+
+        ScrollReveal().reveal('.heading h2', {
+            delay: 100,
+            interval: 100,
+            duration: 500,
+            distance: '20px',
+            origin: 'bottom'
+        });
+
+        ScrollReveal().reveal('.timer', {
+            delay: 100,
+            interval: 100,
+            duration: 500,
+            distance: '40px',
         });
 
         ScrollReveal().reveal('.footer-section', {
             delay: 100,
             interval: 100,
             duration: 800,
+            distance: '30px',
+            origin: 'bottom'
         });
     </script>
 </body>

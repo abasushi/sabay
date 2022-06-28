@@ -104,10 +104,14 @@
                     </div>
                 </div>
             </div>
+
+            <div class="scrollButton">
+                <div class="scroll-down"></div>
+            </div>
         </div>
     </section>
 
-    <section>
+    <section id="stations-section">
         <div class="stationsSection">
             <div class="container">
                 <div class="stationCard">
@@ -368,10 +372,8 @@
 
                 <div class="creator-details">
                     <div class="creator-links">
-                        <a href="www.instagram.com/nlrzzzz/" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="https://neilruiz.github.io/" target="_blank"><i
-                                class="fa-brands fa-github"></i></a>
+                        <a href="www.instagram.com/nlrzzzz/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://neilruiz.github.io/" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
 
@@ -537,25 +539,37 @@
     <script>
         ScrollReveal({
             reset: true,
-            distance: '70px'
         });
 
-        ScrollReveal().reveal('.heading, .subheading, .crawlerContainer', {
+        ScrollReveal().reveal('.heading, .subheading', {
             delay: 100,
             interval: 100,
-            duration: 500,
+            duration: 700,
+            distance: '20px',
+            origin: 'top'
+        });
+
+        ScrollReveal().reveal('.crawlerContainer', {
+            delay: 100,
+            interval: 100,
+            duration: 700,
+            distance: '20px',
+            origin: 'bottom'
         });
 
         ScrollReveal().reveal('.stationCard', {
             delay: 100,
             interval: 100,
             duration: 800,
+            distance: '20px'
         });
 
         ScrollReveal().reveal('.footer-section', {
             delay: 100,
             interval: 100,
             duration: 800,
+            distance: '30px',
+            origin: 'bottom'
         });
     </script>
 </body>
