@@ -94,4 +94,8 @@ header .nav-container {
     .logo img {
         width: 45px;
     }
+
+    .back a{
+        font-size: 1rem;
+    }
 }

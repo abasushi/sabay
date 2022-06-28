@@ -104,85 +104,89 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
-    .heading h1{
+    .stationNameSection {
+        height: 60vh;
+    }
+
+    .heading h1 {
         font-size: 6rem;
         letter-spacing: -6px;
     }
 
-    .heading h2{
+    .heading h2 {
         font-size: 5rem;
         letter-spacing: -2px;
     }
 
-    .timerSection{
+    .timerSection {
         padding: 0 2rem;
     }
 
-    .timer h1{
+    .timer h1 {
         font-size: 1rem;
     }
 
-    .time{
+    .time {
         font-size: 3rem;
     }
 
-    .label{
+    .label {
         font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .heading h1{
+    .heading h1 {
         font-size: 3.8rem;
         letter-spacing: 0;
     }
 
-    .heading h2{
+    .heading h2 {
         font-size: 3.5rem;
         letter-spacing: 0;
     }
 
-    .timerSection{
+    .timerSection {
         padding: 0 2rem;
     }
 
-    .clock{
+    .clock {
         padding: 1rem;
         border-radius: 0.6rem;
     }
 
-    .time{
+    .time {
         margin: 0 0.5rem;
         border-radius: 0.4rem;
     }
 
-    .timer h1{
+    .timer h1 {
         font-size: 0.8rem;
     }
 
-    .time{
+    .time {
         font-size: 2rem;
     }
 
-    .label{
+    .label {
         font-size: 0.8rem;
     }
 }
 
 @media screen and (max-width: 376px) {
-    .timerSection{
+    .timerSection {
         padding: 0 2rem;
     }
 
-    .timer h1{
+    .timer h1 {
         font-size: 1rem;
     }
 
-    .time{
+    .time {
         font-size: 1.8rem;
     }
 
-    .label{
+    .label {
         font-size: 0.8rem;
     }
 }
