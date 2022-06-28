@@ -68,15 +68,6 @@ a {
     color: #0E0E0E;
 }
 
-.footer-column h5 {
-    font-family: 'Spline Sans Mono', sans-serif;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin-top: 1rem;
-    color: #163A24;
-}
-
 .footer-column ul li {
     margin-bottom: 0.2rem;
 }
@@ -89,19 +80,6 @@ a {
     transition: 1s;
     font-weight: 400;
     cursor: pointer;
-}
-
-.footer-column ul li a {
-    font-family: 'Spline Sans Mono', sans-serif;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    color: #000000;
-    transition: 1s;
-    font-weight: 400;
-}
-
-.footer-column ul li a:hover {
-    animation: goo 1s ease-in-out;
 }
 
 .underline {
@@ -159,34 +137,8 @@ a {
     font-family: 'Spline Sans Mono', sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
-    color: #163A24;
+    color: #0e0e0e;
 }
-
-@media screen and (max-width: 992px) {
-    .footer-container {
-        padding: 2rem;
-    }
-
-    .footer-container h1 {
-        font-size: 3rem;
-    }
-
-    .footer-row {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-
-    .footer {
-        margin-bottom: 0;
-    }
-
-    .footer-column {
-        width: 100%;
-        margin-bottom: 2rem;
-    }
-}
-
 
 /* COPY TO CLIPBOARD BUTTON */
 
@@ -196,6 +148,18 @@ a {
 
 .e-mail h2 {
     cursor: pointer;
+    font-family: 'Spline Sans Mono', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #000000;
+    transition: 1s;
+}
+
+.address {
+    position: relative;
+}
+
+.address h2 {
     font-family: 'Spline Sans Mono', sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
@@ -251,23 +215,6 @@ a {
         opacity: 0;
         pointer-events: none;
         transform: translate(0, -2rem);
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .popup {
-        top: -1.5rem;
-    }
-
-    .popup.active {
-        animation: CopyUp 1s ease forwards;
-    }
-
-    .popup h4 {
-        font-family: 'Spline Sans Mono', sans-serif;
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 0.7rem;
     }
 }
 
@@ -518,8 +465,8 @@ a {
 }
 
 .creator-details p {
-    text-align: justify;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .creator-details a {
@@ -594,7 +541,7 @@ a {
     transition: all 300ms ease-in-out 400ms;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
     .creator-popup {
         width: 350px;
         height: 650px;
@@ -629,5 +576,139 @@ a {
     .creator-details h2 {
         font-size: 1.7rem;
         color: #FFFFFF;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .footer-container h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-container {
+        padding: 2rem;
+    }
+
+    .footer-container h1 {
+        font-size: 2rem;
+    }
+
+    .footer-row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .footer {
+        margin-bottom: 0;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .popup {
+        top: -1.5rem;
+    }
+
+    .popup.active {
+        animation: CopyUp 1s ease forwards;
+    }
+
+    .popup h4 {
+        font-family: 'Spline Sans Mono', sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .creator-popup {
+        width: 250px;
+        height: 500px;
+    }
+
+    .creator-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .creator-img {
+        max-width: 250px;
+        height: 250px;
+        /* background-color: #eeb334; */
+    }
+
+    .creator-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .creator-about {
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    .creator-details h2 {
+        font-size: 1.2rem;
+    }
+
+    .creator-details p {
+        font-size: 0.8rem;
+    }
+
+    .creator-links i{
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .creator-popup .dismiss-btn button {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.8rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer-container h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-column h3 {
+        font-size: 0.8rem;
+    }
+
+    .footer-column ul li button {
+        font-size: 1rem;
+    }
+
+    .address h2 {
+        font-size: 1rem;
+    }
+
+    .e-mail h2{
+        font-size: 1rem;
+    }
+
+    .footer-logo img{
+        width: 40px;
+    }
+
+    .footer-rights p{
+        font-size: 0.8rem;
     }
 }

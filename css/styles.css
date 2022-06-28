@@ -135,8 +135,16 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
+    .marquee{
+        max-width: 375px;
+    }
+
+    .marquee-text{
+        font-size: 1.3rem;
+    }
+
     .heroSection{
-        padding: 10rem;
+        padding: 3rem;
     }
 
     .heading h1{
@@ -145,7 +153,7 @@ a {
     }
 
     .subheading h2{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .stationsSection{
@@ -154,5 +162,32 @@ a {
 
     .cardTitle h3{
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .marquee{
+        max-width: 300px;
+    }
+
+    .marquee-text{
+        font-size: 1.3rem;
+    }
+
+    .heading h1{
+        font-size: 4.5rem;
+        letter-spacing: -6px;
+    }
+
+    .subheading h2{
+        font-size: 0.8rem;
+    }
+
+    .stationsSection{
+        padding: 0 2rem;
+    }
+
+    .cardTitle h3{
+        font-size: 1.3rem;
     }
 }
