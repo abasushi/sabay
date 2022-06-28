@@ -136,9 +136,9 @@ a {
 
 @media screen and (max-width: 1024px) {
     .marquee{
-        max-width: 375px;
+        max-width: 100%;
     }
-
+    
     .marquee-text{
         font-size: 1.3rem;
     }
@@ -167,10 +167,6 @@ a {
 }
 
 @media screen and (max-width: 576px) {
-    .marquee{
-        max-width: 300px;
-    }
-
     .marquee-text{
         font-size: 1.3rem;
     }
