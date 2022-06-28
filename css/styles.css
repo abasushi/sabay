@@ -188,6 +188,14 @@ a {
         padding: 0 2rem;
     }
 
+    .stationCard{
+        padding: 1.5rem 1rem;
+    }
+
+    .cardButton a{
+        font-size: 0.9rem;
+    }
+
     .cardTitle h3{
         font-size: 1.3rem;
     }
